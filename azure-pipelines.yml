@@ -133,7 +133,7 @@ stages:
     pool:
       vmImage: 'windows-2019'
     variables:
-    - group: 'Release'
+    - group: 'rgm-release'
     steps: 
     - task: UseDotNet@2
       displayName: 'Use .NET SDK $(dotnetSdkVersion)'
