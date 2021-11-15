@@ -127,7 +127,7 @@ stages:
               azureSubscription: 'EMIT_C&A_DEV_ServiceConnection'
               appName: '$(WebAppNameTest)'
               package: '$(Pipeline.Workspace)/drop/$(buildConfiguration)/*.zip'
-    - job: RunUITests
+    job: RunUITests
     dependsOn: Deploy
     displayName: 'Run UI tests'
     pool:
