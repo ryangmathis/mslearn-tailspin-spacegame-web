@@ -181,7 +181,7 @@ stages:
     pool:
       vmImage: 'ubuntu-20.04'
     variables:
-    - group: Release
+    - group: rgm-release
     steps:
     - script: |
         wget -c ftp.ps.pl/pub/apache/jmeter/binaries/apache-jmeter-$(jmeterVersion).tgz
